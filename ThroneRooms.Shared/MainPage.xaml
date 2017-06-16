@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:ThroneRooms"
+             x:Class="ThroneRooms.MainPage" Appearing="MainPage_OnAppearing">
+
+    <Grid>
+        <maps:Map x:Name="Map"
+                  IsShowingUser="false"
+                  MapType="Street"/>
+
+        <StackLayout HorizontalOptions="Center" VerticalOptions="End">
+            <Button HorizontalOptions="Center" VerticalOptions="End" Text="Search Here" Clicked="Button_OnClicked"/>
+            <Button HorizontalOptions="Center" VerticalOptions="End" Text="Info" Clicked="Info_OnClicked"/>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
